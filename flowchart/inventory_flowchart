@@ -1,0 +1,21 @@
+digraph {
+	Start [label=Start shape=oval]
+	Menu [label="Display Menu" shape=parallelogram]
+	Add [label="Add Product" shape=rectangle]
+	Update [label="Update Stock" shape=rectangle]
+	View [label="View Products" shape=rectangle]
+	Remove [label="Remove Product" shape=rectangle]
+	Exit [label="Exit Program" shape=oval]
+	Choice [label="User Choice?" shape=diamond]
+	Start -> Menu
+	Menu -> Choice
+	Choice -> Add [label="1. Add Product"]
+	Choice -> Update [label="2. Update Stock"]
+	Choice -> View [label="3. View Products"]
+	Choice -> Remove [label="4. Remove Product"]
+	Choice -> Exit [label="5. Exit"]
+	Add -> Menu
+	Update -> Menu
+	View -> Menu
+	Remove -> Menu
+}
